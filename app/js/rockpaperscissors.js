@@ -43,11 +43,11 @@ function getWinner(playerMove,computerMove) {
     if (playerMove == "rock" && computerMove == "scissors" || 
         playerMove == "scissors" && computerMove == "paper" || 
         playerMove == "paper" && computerMove == "rock") {
-        winner = 'player';
+        winner = "player";
     } else if (playerMove == computerMove) {
-        winner = 'tie';
+        winner = "tie";
     } else {
-        winner = 'computer';
+        winner = "computer";
     }
     return winner;
 }
@@ -64,15 +64,15 @@ function playToFive() {
         console.log("Game number: " + numberOfGames)
         playerMove = getPlayerMove(getInput());
         computerMove = getComputerMove(randomPlay());
-        console.log(playerMove + ' vs ' + computerMove);
-        if (getWinner(playerMove, computerMove) == 'player') {
+        console.log(playerMove + " vs " + computerMove);
+        if (getWinner(playerMove, computerMove) == "player") {
             playerWins += 1;
-            console.log('Yay! You won!')
-        } else if (getWinner(playerMove, computerMove) == 'computer') {
+            console.log("Yay! You won!")
+        } else if (getWinner(playerMove, computerMove) == "computer") {
             computerWins += 1;
-            console.log('Sorry, the computer won.')
+            console.log("Sorry, the computer won.")
         } else {
-            console.log('Wow, you tied!')
+            console.log("Wow, you tied!")
         }
         numberOfGames += 1;
     }
@@ -91,15 +91,15 @@ function playToX(x) {
         console.log("Game number: " + numberOfGames)
         playerMove = getPlayerMove(getInput());
         computerMove = getComputerMove(randomPlay());
-        console.log(playerMove + ' vs ' + computerMove);
-        if (getWinner(playerMove, computerMove) == 'player') {
+        console.log(playerMove + " vs " + computerMove);
+        if (getWinner(playerMove, computerMove) == "player") {
             playerWins += 1;
-            console.log('Yay! You won!')
-        } else if (getWinner(playerMove, computerMove) == 'computer') {
+            console.log("Yay! You won!")
+        } else if (getWinner(playerMove, computerMove) == "computer") {
             computerWins += 1;
-            console.log('Sorry, the computer won.')
+            console.log("Sorry, the computer won.")
         } else {
-            console.log('Wow, you tied!')
+            console.log("Wow, you tied!")
         }
         numberOfGames += 1;
     }
